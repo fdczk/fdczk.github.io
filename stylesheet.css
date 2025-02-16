@@ -1,12 +1,22 @@
+/* FONTS or SIZING */
 h1 {
-    font-family: Montserrat, Calibri, Arial, sans-serif;
+    padding-top: 1em;
+    /* font-family: Montserrat, Calibri, Arial, sans-serif; */
     font-weight: 600;
-    font-size: 2em;
+    font-size: 2.6em;
+    /* color: rgb(9, 206, 202); */
+    color: rgb(30, 30, 30);
 }
 
 h2 {
-    font-family: Montserrat, Calibri, Arial, sans-serif;
-    font-weight: 600;
+    /* font-family: Montserrat, Calibri, Arial, sans-serif; */
+    font-weight: 400;
+    font-size: 2em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.3em;
 }
 
 @font-face {
@@ -15,20 +25,22 @@ h2 {
 }
 
 body {
-    color: rgb(229, 229, 229);
-    background-color: rgb(26, 26, 26);
+    color: rgb(30, 30, 30);
+    background-color: rgb(230, 230, 230);
     font-family: Montserrat, Calibri, Arial, sans-serif; /* look at web safe fonts */
     font-size: 1.3em;
 }
 
+/* NAVIGATION */
 a {
-    color: white;
+    color: rgb(30, 30, 30);
     text-decoration: none;
 } a:hover {
-    color: rgb(9, 206, 202);
+    color: rgb(5, 148, 74);
 }
 
-.name_div {
+/* DIVIDERS */
+.center_div {
     text-align: center;
     margin: auto;
     width: fit-content;
@@ -37,10 +49,8 @@ a {
 .nav_div a{
     display: block;
     float: left;
-    margin-right: 1.5em;
-}
-
-.nav_div a.last{
+    margin-right: 1.6em;
+} a.last{
     margin-right: 0em;
 }
 
@@ -48,7 +58,15 @@ a {
     clear: both;
 }
 
-/*
-.row {
+.body_div {
+    /* text-align: justify; */
+    margin: auto;
+    width: 75%;
+}
 
-} */
+/* PADDING */
+.norm_padding {
+    padding: 1em;
+}
+
+h1, h2, h3, h4 {line-height: 0em;}
