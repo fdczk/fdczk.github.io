@@ -1,0 +1,54 @@
+h1 {
+    font-family: Montserrat, Calibri, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: Montserrat, Calibri, Arial, sans-serif;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body {
+    color: rgb(229, 229, 229);
+    background-color: rgb(26, 26, 26);
+    font-family: Montserrat, Calibri, Arial, sans-serif; /* look at web safe fonts */
+    font-size: 1.3em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+} a:hover {
+    color: rgb(9, 206, 202);
+}
+
+.name_div {
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+}
+
+.nav_div a{
+    display: block;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.nav_div a.last{
+    margin-right: 0em;
+}
+
+.clear {
+    clear: both;
+}
+
+/*
+.row {
+
+} */
