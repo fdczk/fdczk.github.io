@@ -1,22 +1,26 @@
+/* ===== NOTE ==== */
 /* FONTS or SIZING */
+/* =============== */
 h1 {
     padding-top: 1em;
     /* font-family: Montserrat, Calibri, Arial, sans-serif; */
-    font-weight: 600;
-    font-size: 2.6em;
+    font-weight: 700;
+    font-size: 2.25em;
+    text-wrap: wrap;
     /* color: rgb(9, 206, 202); */
     color: rgb(30, 30, 30);
 }
 
 h2 {
     /* font-family: Montserrat, Calibri, Arial, sans-serif; */
-    font-weight: 400;
-    font-size: 2em;
+    font-weight: 600;
+    font-size: 1.5em;
 }
 
 p {
     font-size: 1em;
     line-height: 1.3em;
+    font-family: Montserrat, Calibri, Arial, sans-serif; /* look at web safe fonts */
 }
 
 @font-face {
@@ -26,20 +30,32 @@ p {
 
 body {
     color: rgb(30, 30, 30);
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(240, 240, 240);
     font-family: Montserrat, Calibri, Arial, sans-serif; /* look at web safe fonts */
     font-size: 1.3em;
 }
 
-/* NAVIGATION */
+img {
+    width: 100%;
+}
+
+
+/* ==== NOTE ==== */
+/* NAVIGATION BAR */
+/* ============== */
 a {
     color: rgb(30, 30, 30);
     text-decoration: none;
 } a:hover {
     color: rgb(5, 148, 74);
+} a.current {
+    color: rgb(5, 148, 74);
 }
 
+
+/* = NOTE = */
 /* DIVIDERS */
+/* ======== */
 .center_div {
     text-align: center;
     margin: auto;
@@ -49,9 +65,12 @@ a {
 .nav_div a{
     display: block;
     float: left;
-    margin-right: 1.6em;
+    margin-right: 1.7em;
 } a.last{
     margin-right: 0em;
+} a.curr_last{
+    margin-right: 0em;
+    color: rgb(5, 148, 74);
 }
 
 .clear {
@@ -61,10 +80,36 @@ a {
 .body_div {
     /* text-align: justify; */
     margin: auto;
-    width: 75%;
+    width: 70%;
 }
 
-/* PADDING */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 49%;
+    padding: 0.5%;
+}
+.columnsmall {
+    float: left;
+    width: 32.33%;
+    padding: 0.5%;
+}
+.columnbig {
+    float: left;
+    width: 65.66%;
+    padding: 0.5%;
+}
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* = NOTE = */
+/* PADDING  */
+/* ======== */
 .norm_padding {
     padding: 1em;
 }
